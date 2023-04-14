@@ -1,0 +1,108 @@
+
+//가연, 입력한 숫자가 2의 배수이고 5의 배수인 수인지 판별 
+
+	
+	Scanner scan = new Scanner(System.in);
+	
+	int num;
+	String result=null;
+	
+	System.out.print("숫자를 입력하세요 : ");
+	num = scan.nextInt();
+	
+	if (num%2==0 && num%5==0){
+	result = "2의 배수이고 5의 배수입니다.";
+	} if (num%2!=0 || num%5!=0) {
+		result = "2의 배수 또는 5의 배수가 아닙니다.";
+	}
+	
+	System.out.println(num + " : " + result);	
+}
+}
+
+
+==============================================================
+
+
+// 석주, 두 수를 입력 받아 두 수의 크기 비교하기
+
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("숫자를 2번 입력하세요");
+	System.out.print("첫 번째 숫자 : ");
+	int su1 = scan.nextInt();
+	System.out.print("두 번째 숫자 : ");
+	int su2 = scan.nextInt();
+	
+	if (su1>su2) {
+		result = su1 + "이 " + su2+ "보다 큽니다.";
+	}if (su1<su2) {
+		result = su2 + "이 " + su1+ "보다 큽니다.";
+	}
+	System.out.println(result);
+	
+
+==============================================================
+
+
+// 현욱, 시험 점수를 입력 받아 90~100점은 A, 80~89점은 B, 70~79점은 C, 60~69점은 D, 
+나머지 점수는 F를 출력하는 프로그램을 작성하세요.
+
+public class Ex03 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int a;
+		String b = null ;
+		
+		System.out.print("점수 입력 : ");
+		a = input.nextInt();
+		
+		if (a >= 90 && a <= 100) {
+			b = "A"; // b는 A
+		}
+		
+		if (a >= 80 && a <= 89) {
+			b = "B";
+		}
+		
+		if (a >= 70 && a <= 79) {
+			b = "C";
+		}
+		
+		if (a >= 60 && a <= 69) {
+			b = "D";
+		}
+		if (a >= 0 && a <= 59) {
+			b = "F";
+		}
+		if (a < 0 || a > 100 )
+			b = "잘못 입력 하셨습니다.";
+		
+		System.out.println(b);
+
+	}
+}
+
+
+==============================================================
+
+
+// 선우, 입력받은 수가 3또는 5의 배수인지 판별하고, 15의 배수라면 15의 배수라고 출력
+ ex) 3 > 3은(는) 3또는 5의 배수입니다
+     4 > 4은(는) 3또는 5의 배수가 아닙니다
+     5 > 5은(는) 3또는 5의 배수입니다
+     15 > 15은(는) 15의 배수입니다
+     45 > 45은(는) 15의 배수입니다
+
+if(num % 15 == 0) {
+         System.out.println(num + "은(는) 15의 배수입니다");
+      }
+      if( num%15 != 0 && (num % 3 ==0 || num % 5 ==0)) {
+         System.out.println(num + "은(는) 3또는 5의 배수입니다");
+      }
+      if (num % 3 != 0 && num % 5 != 0) {
+         System.out.println(num + "은(는) 3또는 5의 배수가 아닙니다");
+      }
+
+

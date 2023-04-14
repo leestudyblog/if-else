@@ -1,0 +1,101 @@
+- 문제(구구단)
+
+직접 입력한 구구단의 정답을 입력하는 코드
+
+정수형 변수 dan에 구구단 단수를 입력
+정수형 변수 num1에 9 대입
+
+dan * 9 의 정답을 직접 입력하고 정답인지 아닌지 확인하는 문장 출력
+정답입니다.
+오답입니다.
+
+
+
+
+
+
+정답
+Scanner sc = new Scanner(System.in);
+		
+System.out.print("구구단 단수 입력: ");
+int dan = sc.nextInt();
+int num1 = 9;
+		
+System.out.print(dan + " X " + num1 + " = ");
+int answer = sc.nextInt();
+		
+if(answer == (dan * num1)) 
+	System.out.println("정답입니다.");
+
+if(answer != (dan * num1))
+		System.out.println("오답입니다.");
+
+
+
+
+-세 개의 정수를 입력받아 합계, 평균, 최댓값, 최솟값을 구하시오.
+
+
+결과화면 :
+
+세 가지 정수 입력 : 10 30 20
+합계 : 60
+평균 : 20
+최댓값 : 30
+최솟값 : 10
+
+
+
+코드 : 
+      Scanner input = new Scanner(System.in);
+      
+      System.out.print("세 가지 정수 입력 : ");
+      int n1 = input.nextInt();
+      int n2 = input.nextInt();
+      int n3 = input.nextInt();
+      int sum = n1 + n2 + n3;
+      int avg = sum / 3;
+      int max = n1, min = n1;
+      
+      if (max < n2)
+         max = n2;
+      if (max < n3)
+         max = n3;
+      
+      if (min > n2)
+         min = n2;
+      if (min > n3)
+         min = n3;
+      
+      String msg = "합계 : " + sum 
+            + "\n평균 : " + avg 
+            + "\n최댓값 : " + max 
+            + "\n최솟값 : " + min;
+      System.out.println(msg);
+   }
+}
+
+
+사이패스
+성인인지 미성년자인지 구분합니다.
+
+import java.util.Scanner;
+
+public class Ex03 {
+   public static void main(String[] args) {
+      
+      Scanner input = new Scanner(System.in);
+      System.out.println("나이를 입력하시오");
+      System.out.print("당신의 나이는? : ");   
+      int num = input.nextInt();
+      
+      String msg = "미성년자";
+      if(num >=20 ) {
+         msg = "성인";
+      
+      }
+         System.out.println("당신은 "+ msg+" 입니다.");
+   }
+}
+
+
