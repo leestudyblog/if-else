@@ -1,25 +1,9 @@
+import java.util.Scanner;
 
 public class W6 {
 
 	public static void main(String[] args) {
-		/*<1.  학점 출력 문제>
-
-			1. 숫자 하나를 입력 받기
-			2. 자신의 점수와 학점이 같이 출력 되도록 하기
-			
-			숫자가 90점 이상 = A학점, 
-			89점~80점이면 = B학점, 
-			79점~70점이면 = C학점, 
-			70점 미만이면 = 재수강하길바랍니다 
-			출력되도록 하기
-			
-			EX) 자신의 점수를 입력하세요 =>  80
-			     당신의 점수는 80점이며, B학점입니다.		
-					
-			
-			
-			
-			
+		/*
 			
 			
 			<2.  산책 문제>		
@@ -42,7 +26,17 @@ public class W6 {
 			90
 			
 			
-			
+			*/
+		
+		
+		Scanner input = new Scanner(System.in);
+		int start_time =input.nextInt();
+		int comeback_time =input.nextInt();
+		
+		
+		
+		
+		/*
 					
 					
 			
@@ -59,18 +53,6 @@ public class W6 {
 				   * 1~100까지의 랜덤한 수 -> int randomNumber = (int) Math.round(Math.random() * 99) + 1;
 			
 					
-			
-			
-			
-					
-			<4. 합격 / 불합격 문제>		
-			시험 점수가 80점 이상일 경우 PASS, 80점 미만일 경우 FAIL을 출력하는 프로그램 만들기
-			
-			*시험 점수는 0~100 정수. 		
-					
-					
-					
-			
 			
 			*/
 	}
